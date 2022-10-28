@@ -1,0 +1,25 @@
+.footer {
+  background-color: $color-dark-blue;
+  padding: 3.6rem 1.6rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-size(tablet) {
+      width: 100%;
+      max-width: 68.9rem;
+      margin: 0 auto;
+    }
+    @include for-size(desktop) {
+      max-width: 111rem;
+    }
+  }
+
+  &__logo {
+    width: 8.9rem;
+    @include for-size(desktop) {
+      width: 11.4rem;
+    }
+  }
+}
