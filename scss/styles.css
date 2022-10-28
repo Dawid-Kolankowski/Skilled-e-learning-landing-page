@@ -131,26 +131,49 @@ h3 {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
 }
 
-.footer {
-  background-color: #13193f;
-  padding: 3.6rem 1.6rem;
-}
-.footer__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 @media (min-width: 700px) {
-  .footer__container {
+  .wrapper {
     width: 100%;
     max-width: 68.9rem;
     margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
-  .footer__container {
+  .wrapper {
     max-width: 111rem;
   }
+}
+
+.header {
+  padding: 3.6rem 1.6rem;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 8.9rem;
+}
+@media (min-width: 1200px) {
+  .header__logo {
+    width: 11.4rem;
+  }
+}
+
+.footer {
+  background-color: #13193f;
+  padding: 3.6rem 1.6rem;
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding: 3.2rem 0;
+  }
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer__logo {
   width: 8.9rem;
