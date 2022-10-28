@@ -109,14 +109,26 @@ h3 {
   font-size: 1.6rem;
   line-height: 2.8rem;
 }
+.button:hover {
+  cursor: pointer;
+}
 .button--primary {
   background-color: #13193f;
+}
+.button--primary:hover {
+  background-color: #666ca3;
 }
 .button--gradient-blue-purple {
   background: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
 }
+.button--gradient-blue-purple:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
 .button--gradient-orange-pink {
   background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+}
+.button--gradient-orange-pink:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
 }
 
 .footer {

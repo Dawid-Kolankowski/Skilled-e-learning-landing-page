@@ -5,13 +5,25 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.8rem;
+  &:hover {
+    cursor: pointer;
+  }
   &--primary {
     background-color: $color-dark-blue;
+    &:hover {
+      background-color: $color-light-blue;
+    }
   }
   &--gradient-blue-purple {
     background: $gradient-blue-purple;
+    &:hover {
+      background: $gradient-blue-purple-hover;
+    }
   }
   &--gradient-orange-pink {
     background: $gradient-orange-pink;
+    &:hover {
+      background: $gradient-orange-pink-hover;
+    }
   }
 }
