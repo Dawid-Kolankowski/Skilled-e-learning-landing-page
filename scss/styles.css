@@ -233,6 +233,9 @@ body {
     max-width: 45.7rem;
   }
 }
+.hero__img {
+  z-index: -10;
+}
 @media (min-width: 700px) {
   .hero__img img {
     position: absolute;
