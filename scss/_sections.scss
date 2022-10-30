@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   padding: 0 1.6rem;
 
@@ -13,7 +17,16 @@
 }
 
 .header {
-  padding: 3.6rem 0;
+  margin-top: 1.6rem;
+  margin-bottom: 3.8rem;
+
+  @include for-size(tablet) {
+    margin-top: 2.4rem;
+    margin-bottom: 9.9rem;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 17.2rem;
+  }
 
   &__container {
     display: flex;
@@ -26,6 +39,48 @@
     @include for-size(desktop) {
       width: 11.4rem;
     }
+  }
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @include for-size(tablet) {
+    margin-bottom: 18.6rem;
+    flex-direction: row;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 22.6rem;
+  }
+  &__text {
+    max-width: 34.3rem;
+    @include for-size(tablet) {
+      max-width: 39.8rem;
+    }
+    @include for-size(desktop) {
+      max-width: 45.7rem;
+    }
+  }
+  &__img {
+    img {
+      @include for-size(tablet) {
+        position: absolute;
+        top: -26rem;
+        right: -33rem;
+      }
+      @include for-size(desktop) {
+        top: -42rem;
+        right: -50rem;
+      }
+    }
+  }
+  &__header {
+    margin-bottom: 2.6rem;
+  }
+  &__paragraph {
+    margin-bottom: 2.4rem;
   }
 }
 

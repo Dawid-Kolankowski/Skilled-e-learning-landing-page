@@ -5,6 +5,11 @@
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.8rem;
+
+  @include for-size(desktop) {
+    padding: 1.4rem 3.2rem;
+  }
+
   &:hover {
     cursor: pointer;
   }
